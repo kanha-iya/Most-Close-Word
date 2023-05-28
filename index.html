@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        .container { 
+            width: 50%;
+            margin: auto;
+            display: flex;  
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(219, 219, 219);
+            box-shadow: 2px 2px 2px 2px rgb(27, 24, 18);
+        }
+
+        input {
+            display: inline-block;
+        }
+
+        button {
+            width: 10%;
+            margin: auto;
+        }
+        #answerPara{
+            width: 20%;
+            margin: auto;
+           border: 2px solid orange;
+           background-color:aliceblue;
+            padding: 2px;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+
+            Enter your word : <input type="text" id="myText" placeholder="Enter text"> <br> eg: man are 
+        </div>
+        <button onclick="running()"> Find</button>
+        <h3>The Answer is </h3>
+        <div id="answerPara"></div>
+    </div>
+</body> 
+<script src="first.js"></script>
+
+</html>
